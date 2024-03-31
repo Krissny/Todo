@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <style>
+      nav {
+        display: flex;
+        justify-content: start;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+      }
+      .sideMenu {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+    </nav>
+    <div class="container">
+      <div class="sideMenu">
+        Projects
+        <div class="projects">
+          <button class="default">Default</button>
+        </div>
+        <input id="NameOfPro" type="text" placeholder="+ New Project" />
+        <button id="newPro">+</button>
+      </div>
+      <div class="left">
+        <form action="">
+          <div class="interaction">
+            <input id="title" type="text" />
+            <input id="date" type="date" placeholder="Due Date" />
+            <button id="newTask" type="submit">+</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
